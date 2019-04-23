@@ -119,10 +119,11 @@ font-weight: 400;
     color: #04C5CE;
     max-height: 60px;
     max-width: 310px;
-
+}
     /* Hover Effects on Card */
 
     @media (min-width: 992px) {
+
         .pricing .card:hover {
             margin-top: -.25rem;
             margin-bottom: .25rem;
