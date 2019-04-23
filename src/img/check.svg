@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transcrypt_Account-types" transform="translate(-175.000000, -537.000000)" fill="#04C5CE" fill-rule="nonzero">
+            <g id="level-1" transform="translate(145.000000, 432.000000)">
+                <g id="1" transform="translate(30.000000, 102.000000)">
+                    <path d="M1.37164707,7.66551763 C1.18691756,7.46026262 0.870772645,7.44362342 0.665517634,7.62835293 C0.460262623,7.81308244 0.443623417,8.12922736 0.628352927,8.33448237 L5.12835293,13.3344824 C5.3320833,13.5608494 5.6891452,13.5540507 5.88411064,13.3200922 L13.3841106,4.3200922 C13.5608927,4.10795375 13.5322306,3.7926714 13.3200922,3.61588936 C13.1079538,3.43910732 12.7926714,3.46776935 12.6158894,3.6799078 L5.48546093,12.2364219 L1.37164707,7.66551763 Z" id="check"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
