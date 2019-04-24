@@ -185,8 +185,12 @@ table th:last-child {
         margin-left: 21%;
     }
 }
-
-@media screen and (min-width: 1280px) and (max-width: 1669px) {
+@media screen and (min-width: 1439px) and (max-width: 1678px) {
+    #form_card {
+        margin-left: 6%;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1438px) {
     #form_card {
         margin-left: 3%;
     }
