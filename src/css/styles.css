@@ -17,6 +17,12 @@ section.pricing {
     -o-border-radius: ;
 }
 
+@media screen and (min-width: 1024px) {
+    .pricing_size {
+        max-width: 360px;
+    }
+}
+
 .dark_line {
     background: #27304D;
     position: absolute;
@@ -33,12 +39,21 @@ section.pricing {
     font-weight: bold;
 }
 
+.green_icon1 {
+    padding-left: 9px;
+}
+
+.green_icon {
+    padding-right: 9.5px;
+}
+
 .pricing .card-name {
     font-weight: 700;
     font-size: 24px;
     color: #27304D;
     letter-spacing: 0;
     line-height: 30px;
+    padding-bottom: 15px;
     margin: 0;
 }
 
@@ -50,14 +65,30 @@ section.pricing {
     font-weight: 600;
 }
 
-.fas,
-.fa-check {
-    color: #04C5CE;
+.li_text {
+    font-size: 14px;
+    color: #2F304B;
+    letter-spacing: 0;
+    line-height: 17px;
+    font-weight: 400;
+
 }
 
 .pricing ul li {
     margin-bottom: 1rem;
 }
+
+.table {
+    max-width: 290px;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+
+.table td,
+.table th {
+    padding: 0.50rem !important;
+}
+
 
 table th:first-child {
     border-top-left-radius: 10px;
@@ -74,33 +105,37 @@ table th:last-child {
     letter-spacing: 0;
     line-height: 20px;
 }
+
 .second_row {
     background: #EDF1F4;
-    color:#2F304B;
+    color: #2F304B;
     font-size: 12px;
-letter-spacing: 0;
-line-height: 15px;
-font-weight: 400;
+    letter-spacing: 0;
+    line-height: 15px;
+    font-weight: 400;
 }
+
 .my_tooltip {
     background: transparent;
     border-style: none !important;
 }
+
 .requare {
     font-weight: 600;
     font-size: 17px;
     color: #27304D;
     letter-spacing: 0;
     line-height: 30px;
+    margin-bottom: 6px;
 }
 
 .requare_ul {
     color: #04C5CE;
     -moz-column-count: 2;
-    /* Firefox */
     -webkit-column-count: 2;
-    /* Safari and Chrome */
     column-count: 2;
+    margin-top: -7px;
+    margin-left: -25px;
 }
 
 .requare_li {
@@ -114,23 +149,108 @@ font-weight: 400;
 .pricing .btn {
     border: 2px solid #04C5CE;
     border-radius: 30px;
-    background: #F0F4F7;
+    background: #FFFFFF;
     transition: all 0.2s;
     color: #04C5CE;
-    max-height: 60px;
+    height: 60px;
     max-width: 310px;
+    padding-top: 14px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 23px;
+    font-weight: 700;
 }
-    /* Hover Effects on Card */
 
-    @media (min-width: 992px) {
+.pricing .btn:hover {
+    background: #04C5CE;
+    color: #FFFFFF;
+}
 
-        .pricing .card:hover {
-            margin-top: -.25rem;
-            margin-bottom: .25rem;
-            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-        }
+.disabled_btn {
+    background: #EAEBEE !important;
+    color: #8C8D9C !important;
+    border: 1px #8C8D9C !important;
+}
 
-        .pricing .card:hover .btn {
-            opacity: 1;
-        }
+#form_card {
+    max-width: 692px;
+    height: 259px;
+    padding-top: 26px;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+@media screen and (min-width: 1679px) {
+    #form_card {
+        margin-left: 21%;
     }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1669px) {
+    #form_card {
+        margin-left: 3%;
+    }
+}
+#form_card: :hover {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.user_profile {
+    font-size: 20px;
+    color: #27304D;
+    letter-spacing: 0;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+form {
+    margin-right: 31px;
+}
+
+.form-control {
+    max-width: 353px;
+    border-radius: 1.05em !important;
+    -webkit-border-radius: 1.05em !important;
+    -moz-border-radius: 1.05em !important;
+    -ms-border-radius: 1.05em !important;
+    -o-border-radius: 1.05em !important;
+}
+
+.form-control:focus {
+    border-color: #04C5CE !important;
+    box-shadow: none !important;
+}
+
+.input_col {
+    margin-bottom: 21px;
+}
+
+#btn-form {
+    background: #04C5CE;
+    color: #FFFFFF;
+    max-width: 168px;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 17px;
+    padding-top: 10px;
+}
+
+#btn-form:hover {
+    background: #FFFFFF;
+    color: #04C5CE;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
