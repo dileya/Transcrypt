@@ -179,6 +179,7 @@ table th:last-child {
     padding-left: 30px;
     margin-top: 50px;
 }
+
 @media screen and (min-width: 1679px) {
     #form_card {
         margin-left: 21%;
@@ -190,6 +191,7 @@ table th:last-child {
         margin-left: 3%;
     }
 }
+
 #form_card: :hover {
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
 }
@@ -253,4 +255,30 @@ form {
     .pricing .card:hover .btn {
         opacity: 1;
     }
+}
+
+/* Second Page */
+.heading {
+    margin-top: 96px;
+}
+.heading_title {
+    font-size: 30px;
+    color: #27304D;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 33px;
+}
+
+.heading_text {
+    font-size: 15px;
+    color: #27304D;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 93px;
+}
+#page_2 {
+    padding-bottom: 100px !important;
 }
