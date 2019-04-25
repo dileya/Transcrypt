@@ -9,11 +9,60 @@
   <link rel="stylesheet" href="src/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="src/css/styles.css">
-  <link rel="stylesheet" href="src/css/app.min.css">
+  <link rel="stylesheet" href="src/css/app_2.min.css">
 
 </head>
 
 <body>
+  <header class="top-nav">
+    <div class="head-row">
+      <div class="head-col left">
+        <a href="/en/" class="logo"><img src="src/img/logo_transcrypt1.svg" /></a>
+        <div class="nav">
+          <!-- <div class="item"><a href="#">Exchange</a></div>-->
+          <div class="item"><a href="/en#fees" ng-click="scrollTo('#fees')">Fees</a></div>
+          <div class="item"><a href="/en/faq">Help</a></div>
+          <div class="item"><a href="/en/faq">Contacts</a></div>
+        </div>
+      </div>
+      <div class="head-col right">
+        <div class="lang-drop">
+          <div class="ui dropdown lang pointing" dropdown="100">
+            <input type="hidden" name="lang">
+            <div class="default text"><i class="flag-icon en"></i> <span>EN</span></div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="/ru" class="item">
+                <i class="flag-icon ru"></i> <span> RU</span>
+              </a>
+              <a href="/fr" class="item">
+                <i class="flag-icon fr"></i> <span> FR</span>
+              </a>
+              <a href="/sp" class="item">
+                <i class="flag-icon sp"></i> <span> SP</span>
+              </a>
+              <a href="/ge" class="item">
+                <i class="flag-icon ge"></i> <span> GE</span>
+              </a>
+              <a href="/it" class="item">
+                <i class="flag-icon it"></i> <span> IT</span>
+              </a>
+              <a href="/ch" class="item">
+                <i class="flag-icon ch"></i> <span> CH</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="nav">
+          <div class="item"><a href="javascript:;" show-modal=".modal-signin">Sign in</a></div>
+          <div class="item"><a class="outlined ui button sign tsc tsc-primal" show-modal=".modal-signup">Create
+              Account</a></div>
+        </div>
+        <span class="menu-toggle"><i></i></span>
+      </div>
+    </div>
+  </header>
   <section class="pricing py-5" id="page_2">
     <div class="container-fluid">
       <div class="row">
@@ -32,235 +81,259 @@
       <div class="row d-flex justify-content-center">
         <!-- First Prising -->
         <div class="col-lg-4 col-md-4 pricing_size">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
-              <div class="dark_line" style="height: 1.8%;"></div>
-              <h6 class="card-name text-left">Level 1<img class="green_icon1" src="src/img/check_green.svg"></img></h6>
-              <p class="subtext">Everything is Starter plus:</p>
-              <ul class="list-unstyled">
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-              </ul>
-              <div class="row d-flex justify-content-center">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="first_row"></th>
-                      <th scope="col" class="first_row text-uppercase">Deposits</th>
-                      <th scope="col" class="first_row text-uppercase">Withdrawals</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" class="second_row">
-                        <a href="#" data-toggle="tooltip" class="my_tooltip" title="FIAT">
-                          <img src="src/img/eur.svg"></a></td>
-
-                      <td class="second_row">€500,000/mo.</td>
-                      <td class="second_row">No limits</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="second_row">
-                        <a href="#" data-toggle="tooltip" title="CRYPTO">
-                          <img src="src/img/btc.svg"></a></td>
-                      <td class="second_row">€500,000/mo.</td>
-                      <td class="second_row">No limits</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <div class="dark_line" style="height: 1.8%;"></div>
+                <h6 class="card-name text-left">Level 1<img class="green_icon1" src="src/img/check_green.svg"></img></h6>
+                <p class="subtext">Everything is Starter plus:</p>
+                <ul class="list-unstyled">
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                </ul>
+                <div class="row d-flex justify-content-center">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="first_row"></th>
+                        <th scope="col" class="first_row text-uppercase">Deposits</th>
+                        <th scope="col" class="first_row text-uppercase">Withdrawals</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="second_row">
+                          <div class="con-tooltip left">
+                            <img src="src/img/eur.svg">
+                            <div class="tooltip" id="my-tooltip">
+                              <p>FIAT</p>
+                            </div>
+                        </td>
+  
+                        <td class="second_row">€500,000/mo.</td>
+                        <td class="second_row">No limits</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="second_row">
+                          <div class="con-tooltip left">
+                            <img src="src/img/btc.svg">
+                            <div class="tooltip" id="my-tooltip">
+                              <p class="pad_tootip">CRYPTO</p>
+                            </div>
+                        </td>
+                        <td class="second_row">€500,000/mo.</td>
+                        <td class="second_row">No limits</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="requare">Requirements</p>
+                <p class="subtext">Everything is Starter plus:</p>
+                <ul class="requare_ul">
+                  <li><span class="requare_li">Full Name</span></li>
+                  <li><span class="requare_li">Email Address</span></li>
+                  <li><span class="requare_li">Primary Address</span></li>
+                  <li><span class="requare_li">Phone Number</span></li>
+                </ul>
+                <a class="btn btn-block btn-primary text-uppercase" style="opacity:0">Verify Now</a>
               </div>
-              <p class="requare">Requirements</p>
-              <p class="subtext">Everything is Starter plus:</p>
-              <ul class="requare_ul">
-                <li><span class="requare_li">Full Name</span></li>
-                <li><span class="requare_li">Email Address</span></li>
-                <li><span class="requare_li">Primary Address</span></li>
-                <li><span class="requare_li">Phone Number</span></li>
-              </ul>
-              <a class="btn btn-block btn-primary text-uppercase" style="opacity:0">Verify Now</a>
             </div>
           </div>
-        </div>
         <!-- Second Prising -->
         <div class="col-lg-4 col-md-4 pricing_size">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
-              <div class="dark_line" style="height: 1.8%;"></div>
-              <h6 class="card-name text-left">Level 1<img class="green_icon1" src="src/img/check_green.svg"></img></h6>
-              <p class="subtext">Everything is Starter plus:</p>
-              <ul class="list-unstyled">
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-              </ul>
-              <div class="row d-flex justify-content-center">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="first_row"></th>
-                      <th scope="col" class="first_row text-uppercase">Deposits</th>
-                      <th scope="col" class="first_row text-uppercase">Withdrawals</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" class="second_row">
-                        <a href="#" data-toggle="tooltip" title="FIAT">
-                          <img src="src/img/eur.svg"></a></td>
-
-                      <td class="second_row">€500,000/mo.</td>
-                      <td class="second_row">No limits</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="second_row">
-                        <a href="#" data-toggle="tooltip" title="CRYPTO">
-                          <img src="src/img/btc.svg"></a></td>
-                      <td class="second_row">€500,000/mo.</td>
-                      <td class="second_row">No limits</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <div class="dark_line" style="height: 1.8%;"></div>
+                <h6 class="card-name text-left">Level 1<img class="green_icon1" src="src/img/check_green.svg"></img></h6>
+                <p class="subtext">Everything is Starter plus:</p>
+                <ul class="list-unstyled">
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                </ul>
+                <div class="row d-flex justify-content-center">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="first_row"></th>
+                        <th scope="col" class="first_row text-uppercase">Deposits</th>
+                        <th scope="col" class="first_row text-uppercase">Withdrawals</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="second_row">
+                          <div class="con-tooltip left">
+                            <img src="src/img/eur.svg">
+                            <div class="tooltip" id="my-tooltip">
+                              <p>FIAT</p>
+                            </div>
+                        </td>
+  
+                        <td class="second_row">€500,000/mo.</td>
+                        <td class="second_row">No limits</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="second_row">
+                          <div class="con-tooltip left">
+                            <img src="src/img/btc.svg">
+                            <div class="tooltip" id="my-tooltip">
+                              <p class="pad_tootip">CRYPTO</p>
+                            </div>
+                        </td>
+                        <td class="second_row">€500,000/mo.</td>
+                        <td class="second_row">No limits</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="requare">Requirements</p>
+                <p class="subtext">Everything is Starter plus:</p>
+                <ul class="requare_ul">
+                  <li><span class="requare_li">Full Name</span></li>
+                  <li><span class="requare_li">Email Address</span></li>
+                  <li><span class="requare_li">Primary Address</span></li>
+                  <li><span class="requare_li">Phone Number</span></li>
+                </ul>
+                <a class="btn btn-block btn-primary text-uppercase" style="opacity:0">Verify Now</a>
               </div>
-              <p class="requare">Requirements</p>
-              <p class="subtext">Everything is Starter plus:</p>
-              <ul class="requare_ul">
-                <li><span class="requare_li">Full Name</span></li>
-                <li><span class="requare_li">Email Address</span></li>
-                <li><span class="requare_li">Primary Address</span></li>
-                <li><span class="requare_li">Phone Number</span></li>
-              </ul>
-              <a href="#" class="btn btn-block btn-primary">Verify Now</a>
             </div>
           </div>
-        </div>
         <!-- Third Prising -->
         <div class="col-lg-4 col-md-4 pricing_size">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
-              <div class="dark_line" style="height: 1.8%;"></div>
-              <h6 class="card-name text-left">Level 1<img class="green_icon1" src="src/img/check_green.svg"></img></h6>
-              <p class="subtext">Everything is Starter plus:</p>
-              <ul class="list-unstyled">
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-                <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
-                    digital assets</span></li>
-              </ul>
-              <div class="row d-flex justify-content-center">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="first_row"></th>
-                      <th scope="col" class="first_row text-uppercase">Deposits</th>
-                      <th scope="col" class="first_row text-uppercase">Withdrawals</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row" class="second_row">
-                        <a href="#" data-toggle="tooltip" title="FIAT">
-                          <img src="src/img/eur.svg"></a></td>
-
-                      <td class="second_row">€500,000/mo.</td>
-                      <td class="second_row">No limits</td>
-                    </tr>
-                    <tr>
-                      <td scope="row" class="second_row">
-                        <a href="#" data-toggle="tooltip" title="CRYPTO">
-                          <img src="src/img/btc.svg"></a></td>
-                      <td class="second_row">€500,000/mo.</td>
-                      <td class="second_row">No limits</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <div class="dark_line" style="height: 1.8%;"></div>
+                <h6 class="card-name text-left">Level 1<img class="green_icon1" src="src/img/check_green.svg"></img></h6>
+                <p class="subtext">Everything is Starter plus:</p>
+                <ul class="list-unstyled">
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                  <li><span class="li_text"><img class="green_icon" src="src/img/check.svg"></img>Deposit & withdraw
+                      digital assets</span></li>
+                </ul>
+                <div class="row d-flex justify-content-center">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="first_row"></th>
+                        <th scope="col" class="first_row text-uppercase">Deposits</th>
+                        <th scope="col" class="first_row text-uppercase">Withdrawals</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="second_row">
+                          <div class="con-tooltip left">
+                            <img src="src/img/eur.svg">
+                            <div class="tooltip" id="my-tooltip">
+                              <p>FIAT</p>
+                            </div>
+                        </td>
+  
+                        <td class="second_row">€500,000/mo.</td>
+                        <td class="second_row">No limits</td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="second_row">
+                          <div class="con-tooltip left">
+                            <img src="src/img/btc.svg">
+                            <div class="tooltip" id="my-tooltip">
+                              <p class="pad_tootip">CRYPTO</p>
+                            </div>
+                        </td>
+                        <td class="second_row">€500,000/mo.</td>
+                        <td class="second_row">No limits</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="requare">Requirements</p>
+                <p class="subtext">Everything is Starter plus:</p>
+                <ul class="requare_ul">
+                  <li><span class="requare_li">Full Name</span></li>
+                  <li><span class="requare_li">Email Address</span></li>
+                  <li><span class="requare_li">Primary Address</span></li>
+                  <li><span class="requare_li">Phone Number</span></li>
+                </ul>
+                <a class="btn btn-block btn-primary text-uppercase" style="opacity:0">Verify Now</a>
               </div>
-              <p class="requare">Requirements</p>
-              <p class="subtext">Everything is Starter plus:</p>
-              <ul class="requare_ul">
-                <li><span class="requare_li">Full Name</span></li>
-                <li><span class="requare_li">Email Address</span></li>
-                <li><span class="requare_li">Primary Address</span></li>
-                <li><span class="requare_li">Phone Number</span></li>
-              </ul>
-              <a href="#" class="btn btn-block btn-primary disabled_btn">Disabled Button</a>
             </div>
           </div>
-        </div>
       </div>
   </section>
   <!-- Footer -->
   <footer class="footer" ng-controller="Footer">
-      <div class="wrapper">
-          <div class="footer-cols">
-              <div class="footer-column">
-                  <h4>Transcrypt</h4>
-                  <ul>
-                      <li><a href="/en/terms">User Agreement</a></li>
-                      <li><a href="/en/policy">Privacy policy</a></li>
-                      <li><a href="/en/refund">Refund policy</a></li>
-                      <li><a href="/en/cookies">Cookie policy</a></li>
-                      <li><a href="/en/aml">AML/KYC policy</a></li>
-                      <!--<li><a href="#">Market Data Terms of Use</a></li>
+    <div class="wrapper">
+      <div class="footer-cols">
+        <div class="footer-column">
+          <h4>Transcrypt</h4>
+          <ul>
+            <li><a href="/en/terms">User Agreement</a></li>
+            <li><a href="/en/policy">Privacy policy</a></li>
+            <li><a href="/en/refund">Refund policy</a></li>
+            <li><a href="/en/cookies">Cookie policy</a></li>
+            <li><a href="/en/aml">AML/KYC policy</a></li>
+            <!--<li><a href="#">Market Data Terms of Use</a></li>
                       <li><a href="#">Security Statement</a></li>
                       <li><a href="#">Digital Asset Framework</a></li>-->
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <h4>Information</h4>
-                  <ul>
-                      <!--<li><a href="#">API Documentation</a></li>-->
-                      <li><a href="/#fees" ng-click="scrollTo('#fees')">Fees</a></li>
-                      <li><a href="/en/faq">FAQ</a></li>
-                      <li><a href="/en/faq">Contacts</a></li>
-                  </ul>
-              </div>
-               <div class="footer-column">
-                  <ul>
-                      <li ng-repeat="(i,v) in one"><span ng-bind="::i"></span> <span ng-bind="::v"></span></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <ul>
-                      <li ng-repeat="(i,v) in two"><span ng-bind="i"></span> <span ng-bind="v"></span></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <ul>
-                      <li ng-repeat="(i,v) in three"><span ng-bind="::i"></span> <span ng-bind="::v"></span></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <ul>
-                      <li ng-repeat="(i,v) in four"><span ng-bind="::i"></span> <span ng-bind="::v"></span></li>
-                  </ul>
-              </div>
-          </div>
-
-          <div class="ftr-bottom">
-              <span class="ftr-logo">Transcrypt</span>
-              <span class="copy">
-                © 2019 TRANSCRYPT OU REG. Nr.14453691, Harju maakond, Tallinn,<br> 
-                Kesklinna linnaosa, Narva mnt 13, EE-10151.  All rights reserved
-                <span class="master-logo"></span>
-              </span>
-          </div>
-
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Information</h4>
+          <ul>
+            <!--<li><a href="#">API Documentation</a></li>-->
+            <li><a href="/#fees" ng-click="scrollTo('#fees')">Fees</a></li>
+            <li><a href="/en/faq">FAQ</a></li>
+            <li><a href="/en/faq">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li ng-repeat="(i,v) in one"><span ng-bind="::i"></span> <span ng-bind="::v"></span></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li ng-repeat="(i,v) in two"><span ng-bind="i"></span> <span ng-bind="v"></span></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li ng-repeat="(i,v) in three"><span ng-bind="::i"></span> <span ng-bind="::v"></span></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li ng-repeat="(i,v) in four"><span ng-bind="::i"></span> <span ng-bind="::v"></span></li>
+          </ul>
+        </div>
       </div>
+
+      <div class="ftr-bottom">
+        <span class="ftr-logo">Transcrypt</span>
+        <span class="copy">
+          © 2019 TRANSCRYPT OU REG. Nr.14453691, Harju maakond, Tallinn,<br>
+          Kesklinna linnaosa, Narva mnt 13, EE-10151. All rights reserved
+          <span class="master-logo"></span>
+        </span>
+      </div>
+
+    </div>
   </footer>
 </body>
 
