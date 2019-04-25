@@ -362,7 +362,7 @@ form {
     position: absolute;
     left: 40%;
   }
-  @media screen and (min-width: 968px) and (max-width: 1244px) {
+  @media screen and (min-width: 768px) and (max-width: 1244px) {
   .con-tooltip {
     padding: 0 13px;
     }
