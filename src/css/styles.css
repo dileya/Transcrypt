@@ -92,10 +92,19 @@ section.pricing {
 
 table th:first-child {
     border-top-left-radius: 10px;
+    border-color: transparent;
 }
 
 table th:last-child {
     border-top-right-radius: 10px;
+    border-color: transparent;
+}
+
+.table td, .table th {
+    border-top: 0px !important;
+}
+.table thead th {
+    border-bottom: 0px !important;
 }
 
 .first_row {
@@ -333,12 +342,14 @@ form {
   }
   #my-tooltip {
     font-size: 10px;
-    padding-top: 13px;
     word-wrap: normal;
     text-align: center;
   }
   .pad_tootip {
     margin-left: -8px;
+    position: relative;
+    top: 8px;
+    text-align: center;
   }
   /* tooltip  after*/
   .tooltip::after {
@@ -346,7 +357,7 @@ form {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 12px 12.5px 0 12.5px;
+    border-width: 14px 3.5px 2px 12.5px;
     border-color: #FFFFFF transparent transparent transparent;
     position: absolute;
     left: 40%;
@@ -384,7 +395,7 @@ form {
   .left .tooltip{ top:-90%; left:-100%; }
   
   .left .tooltip::after{
-    top:40%;
+    top:31%;
     left:90%;
     transform: rotate(-90deg);
   }
